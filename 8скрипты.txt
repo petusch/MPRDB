@@ -1,0 +1,56 @@
+INSERT INTO public."Doctors"(
+	id, full_name, speciality, grade)
+	VALUES (1, 'FIO', 'surgeon', 3);
+	
+INSERT INTO public."Doctors"(
+	id, full_name, speciality, grade)
+	VALUES (2, 'SNN', 'dentist', 1);
+	
+INSERT INTO public."Doctors"(
+	id, full_name, speciality, grade)
+	VALUES (3, 'Surname N', 'surgeon', 2);
+	
+INSERT INTO public."Doctors"(
+	id, full_name, speciality, grade)
+	VALUES (4, 'CDS', 'therapist', 3);
+	
+INSERT INTO public."Doctors"(
+	id, full_name, speciality, grade)
+	VALUES (5, 'Surname Name', 'onkologist', 1);
+-------------------------------------------------------------------------------------------------------------------
+INSERT INTO public."Patients"(
+	id, full_name, enrolled_at, diagnosis, therapist_id)
+	VALUES (1, 'Surname NN', '2000-04-22', 'cancer', 1);
+	
+INSERT INTO public."Patients"(
+	id, full_name, enrolled_at, diagnosis, therapist_id)
+	VALUES (2, 'Иванов ИИ', '2002-04-22', 'crippling depression', 4);
+	
+INSERT INTO public."Patients"(
+	id, full_name, enrolled_at, diagnosis, therapist_id)
+	VALUES (3, 'Petrov PP', '2001-02-12', 'cancer', 1);
+	
+INSERT INTO public."Patients"(
+	id, full_name, enrolled_at, diagnosis, therapist_id)
+	VALUES (4, 'Sidorov SS', '2008-08-22', 'heart stroke', 2);
+	
+INSERT INTO public."Patients"(
+	id, full_name, enrolled_at, diagnosis, therapist_id)
+	VALUES (5, 'White NV', '2000-04-22', 'diabetes', 3);
+----------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO public.department(
+	id, age_affilation, name, chief_id, "amountOfpatients")
+	VALUES (1, true, 'Common', 5, 25);
+INSERT INTO public.department(
+	id, age_affilation, name, chief_id, "amountOfpatients")
+	VALUES (2, false, 'Common', 5, 15);
+INSERT INTO public.department(
+	id, age_affilation, name, chief_id, "amountOfpatients")
+	VALUES (3, true, 'Onkological', 3, 45);
+INSERT INTO public.department(
+	id, age_affilation, name, chief_id, "amountOfpatients")
+	VALUES (4, true, 'Cardiology', 1, 5);
+INSERT INTO public.department(
+	id, age_affilation, name, chief_id, "amountOfpatients")
+	VALUES (5, false, 'Cardiology', 2, 25);
+----------------------------------------------------------------------------------------------------------------------------------
